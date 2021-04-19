@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calcul de filtres</title>
+        <link rel="stylesheet" text="text/css" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/filtres.js"></script>
+    </head>
+
+    <body class="container-sm">
+        <header class="w-75" id="header">
+            <h1 class="display-4">BE Télécoms - Filtres</h1>
+        </header>
+
+        <article class="container w-50">
+            <h2>Calcul des filtres passe-bas de Tchebyscheff</h2>
+
+            <p id="error"></p>
+
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" placeholder="Ordre du filtre" id="order"></input>
+                        <label for="order">Ordre du filtre</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" placeholder="Taux d'atténuation (dB)" id="amax"></input>
+                        <label for="amax">Taux d'atténuation (dB)</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="freqc" placeholder="Fréquence de coupure" >
+                        <label for="freqc">Fréquence de coupure</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="unit">
+                        <option value="1" selected>Hz</option>
+                        <option value="1000">kHz</option>
+                        <option value="1000000">MHz</option>
+                        <option value="1000000000">GHz</option>
+                        </select>
+                        <label for="unit">Unité de la fréquence de coupure</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" placeholder="Impédance R1 (Ohm)" id="r1"></input>
+                        <label for="r1">Impédance R1 (Ohm)</label>
+                    </div>
+                </div>
+                    <div class="col-3 btn-group">
+                        <button class="btn btn-primary" onclick="checkValues()">Calculer</button>
+                        <button class="btn btn-danger" onclick="clean()">Effacer</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toHide">
+                <p><strong>Éléments caractéristiques du filtre</strong></p>
+                <p id="result">
+                </p>
+            </div>
+        </article>
+
+        <footer id="footer" class="container fixed-bottom">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <p><strong>Copyright 2021</strong> - Chabert Thomas | Coulais Alexandre | Fourcroy Guillaume</p>
+                    <p><strong>CSS</strong> - Bootstrap 5.0</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/logoSTRI.png" />
+                </div>
+            </div>
+        </footer>
+
+        <style>
+            #header {
+                margin: 30px 0px;
+            }
+
+            #toHide {
+                margin-top: 20px;
+                visibility: hidden;
+            }
+
+            #footer {
+                margin-top: 1cm;
+            }
+        </style>
+    </body>
+</html>
