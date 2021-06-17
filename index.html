@@ -1,20 +1,144 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Page pro - Alexandre Coulais</title>
-        <link rel="stylesheet" text="text/css" href="css/bootstrap.css" />
+        <meta content="utf-8" />
+        <title>CV Coulais Alexandre</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
     </head>
 
     <body class="container-sm">
-        <h1>Bienvenue sur mon site pro</h1>
+        <header class="container w-75">
+            <div class="row">
+                <h1 class="col">Coulais Alexandre</h1>
+                <h2 class="col">Alternance Master ingénierie des réseaux et systèmes informatiques</h2>
+            </div>
+        </header>
 
-        <h2>Pages disponibles</h2>
-        <p>
-            <ul>
-                <li><a href="cv.html">Mon CV</a></li>
-                <li><a href="filtres.html">Calcul de filtres</a></li>
-            </ul>
-        </p>
+        <hr>
+
+        <article class="container w-75">
+            <div class="row">
+                <div class="col">
+                    <div id="coord">
+                        <h3>Coordonnées</h3>
+
+                        <p>
+                            <ul>
+                                <li>alexandre64coulais@gmail.com</li>
+                                <li>06 22 30 40 21</li>
+                                <li>
+                                    118 Route de Narbonne
+                                    <br>Résidences les Intégrales, Apt B88
+                                    <br>31077 Toulouse CX 4
+                                </li>
+                                <li><a href="https://www.github.com/alexC6">Dépôts GitHub</a></li>
+                                <li><a href="https://www.linkedin.com/in/acoulais-570/">Page Linkedin</a></li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div id="softSkills">
+                        <h3>Soft Skills</h3>
+
+                        <p>
+                            Résistance au stress | Organisation | Rigueur |
+                            <br>Autonomie | Curiosité | Travail en équipe
+                        </p>
+                    </div>
+
+                    <div id="skills">
+                        <h3>Compétences</h3>
+
+                        <ul>
+                            <li>Programmation orientée objet et impérative</li>
+                            <li>Langages C++ | C | Java | Bash | Python</li>
+                            <li>Administration système | Scripts</li>
+                            <li>Réseaux locaux et d'opérateurs | Architecture TCP/IP</li>
+                            <li>Bases de données MySQL | Oracle | PostgreSQL</li>
+                            <li>Notions programmation système</li>
+                            <li>Anglais - B2</li>
+                        </ul>
+                    </div>
+
+                    <div id="hobbies">
+                        <h3>Loisirs</h3>
+                        
+                        <p>Aéronautique (BIA) | Cuisine | Voyages | Sciences physiques</p>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div id="projects">
+                        <h3>Projets</h3>
+
+                        <ul>
+                            <li>
+                                Langage Java
+                                <ul>
+                                    <li>Avril 2020 - Projet en équipe | Jeu en CLI de type Donjons et dragons</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Langage C
+                                <ul>
+                                    <li>Janvier 2020 - Projet en équipe | Développement d'un annuaire partagé client/serveur</li>
+                                    <li>Décembre 2020 - Serveur HTTP simplifié</li>
+                                    <li>Décembre 2019 - Parseur de fichier XML</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Langage C++
+                                <ul>
+                                    <li>Juin 2020 - Version C++ d'un Javaquarium</li>
+                                    <li>Avril 2020 - Parseur regex des résultats de la ligue 1 de football</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="school">
+                        <h3>Formation</h3>
+
+                        <ul>
+                            <li>
+                                Septembre 2020 - Mai 2021
+                                <br>Université Toulouse III Paul Sabatier
+                                <br>Licence 3 Informatique Réseaux et Télécoms
+                            </li>
+                            <li>
+                                Septembre 2018 - Mai 2020
+                                <br>Université de Pau et des Pays de l'Adour
+                                <br>Licence 2 Informatique
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="exp">
+                        <h3>Expérience</h3>
+
+                        <ul>
+                            <li>
+                                Septembre 2019 - Juillet 2020
+                                <br>Hôte de caisse
+                                <br>Leclerc Pau Tempo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="container w-50">
+            <div class="row">
+                <form class="col" method="get" action="res/CV_Coulais.pdf">
+                    <button class="btn btn-primary" type="submit">Mon CV en PDF</button>
+                </form>
+
+                <form class="col" method="get" action="res/LM_Coulais.pdf">
+                    <button class="btn btn-secondary" type="submit">Ma lettre de motivation</button>
+                </form>
+            </div>
+        </footer>
     </body>
 </html>
